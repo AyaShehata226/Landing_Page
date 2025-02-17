@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.nav{
+    width:100%;
+    justify-content: space-between;
+    padding: 0px 150px;
+    background-color: #0B9586;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top:0;
+    z-index:1000
+}
+
+.nav img{
+    width: 157px;
+    height: 42px;
+    border-radius: 5px;
+}
+.nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li{
+    list-style-type:none;
+    margin: 0 8px; 
+    /* color: inherit; */
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 28px;
+    margin: 8px;
+}
+.nav ul li a[href*='home']{
+    border-radius: 5px;
+    border: #02baa4ca 1px solid;
+}
+.contact-info {
+    flex-direction: column;
+    padding:0 10px;
+}
+.contact-info .label{
+    margin-left: 10px;
+}
+.contact-info .phone{
+    font-weight: bolder;
+    font-size:large;
+}
+@media (max-width: 768px) {
+    .nav{
+        padding: 0px 10px;
+    }
+    .nav ul{
+        display: none;
+    }
+}
+
+header{
+  background-image: url("./images/solar-panels-meadow 1.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 650px; /* As per your requirements */
+  display: flex; /* Allows layout alignment */
+  flex-direction: column; /* Stacks elements vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: start; /* Centers content horizontally */
+  color: white;
+  padding: 0 2rem;
+
+}
+.progres {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin-left: 150px;
+}
+
+.progres > span {
+    flex: 0 0 auto;
+    font-size: 16px; 
+}
+
+.progres > div {
+    display: flex;
+    flex: 1; /* Take up remaining width between spans */
+    align-items: center;
+    height: 20px; /* Adjust height as needed */
+    margin: 0 10px; 
+}
+
+.progres > div span {
+    flex: 1; /* Each span will share available width equally */
+    height: 5px;
+    box-sizing: border-box; /* Include borders in size */
+    border-radius: 2px;
+}
+
+.progres > div .filled {
+    background-color: white;
+}
+
+.progres > div .empty {
+    background-color: rgba(5, 5, 5, 0.3); /* Example fill for visibility */
+}
+
+header .panel{
+    max-width: 729px;
+    max-height:100vh;
+    margin-left: 150px;
+    padding: 10px;
+    margin-top: 40px;
+}
+.panel h1{
+    font-weight: 600px;
+    font-size: 52px;
+    line-height: 62.93px;
+    letter-spacing: -2px;
+    font-family: "Inter";
+    margin-top: 20px;
+}
+
+.panel p{
+    font-family: "Inter";
+    font-weight: 600px;
+    font-size: 20px;
+    line-height:30px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+.panel div{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.panel div .call{
+    max-width: 173px;
+    height: auto;
+    border-radius: 109px;
+    padding: 12px 34px;
+    gap:10px;
+    background-color: rgba(60, 171, 144, 1);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.panel div .call:hover {
+    background-color: rgba(50, 150, 130, 1); /* Darker hover effect */
+}
+
+/* Request a Call Back Button */
+.panel div .request {
+    max-width: 220px;
+    height: auto; /* Let the height adapt to the content */
+    border-radius: 109px;
+    padding: 12px 34px;
+    background-color: rgba(255, 187, 28, 1);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.panel div .request:hover {
+    background-color: rgba(235, 160, 20, 1); /* Darker hover effect */
+}
