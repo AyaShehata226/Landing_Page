@@ -4,6 +4,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
+/* nav */
 .nav{
     width:100%;
     justify-content: space-between;
@@ -63,7 +64,8 @@ body{
         display: none;
     }
 }
-
+/* nav */
+/* header */
 header{
   background-image: url("./images/solar-panels-meadow 1.png");
   background-size:cover;
@@ -176,3 +178,98 @@ header .panel{
 .panel div .request:hover {
     background-color: rgba(235, 160, 20, 1); /* Darker hover effect */
 }
+/* header */
+
+/* home */
+
+/* first section  */
+.first_section{
+    justify-items: center;
+}
+.installers{
+    max-width: 1135.52px;
+    /* height: 712px; */
+    padding: 80px;
+    display: flex;
+    justify-items:center;
+    justify-content:space-around;
+    gap: 60px;
+}
+.installers div:first-child{
+    max-width:594px;
+    /* height: 476px; */
+    gap:50px;
+}
+
+.installers div:first-child > div:first-child h1{
+    font-family: 'Inter';
+    font-weight: 600px;
+    font-size: 42px;
+    line-height: 50.83px;
+    letter-spacing: -2%;
+    color: rgba(16, 24, 40, 1);
+}
+.installers div:first-child > div:first-child p{
+    font-family: 'Inter';
+    font-weight: 400px;
+    size: 16px;
+    line-height:24px;
+    letter-spacing:0;
+    color: rgba(71, 84, 103, 1);
+    ;
+}
+
+.installers div:first-child > div:last-child{
+    margin-top:65px;
+}
+.installers div:first-child > div:last-child  span{
+    font-family: 'Inter';
+    font-weight: 700px;
+    size: 20px;
+    line-height:23.28px;
+    letter-spacing:4;
+    color:rgba(132, 189, 58, 1);
+}
+.installers div:first-child > div:last-child p{
+    font-family: 'Inter';
+    font-weight:600;
+    size: 20px;
+    line-height:30px;
+    letter-spacing:0;
+    color:rgba(16, 24, 40, 1);
+}
+
+.installers > div:last-child{
+    max-width: 518.52px;
+    height: 552px;
+    border-radius: 12px;
+    position: relative;
+
+}
+.installers > div:last-child div{
+    position: absolute;
+    background-color: rgba(255, 187, 28, 1);
+    max-width: 266px;
+    max-height:208px;
+    top:322px;
+    left: -70px;
+    border-radius: 12px;
+    padding: 24px 30px;
+    gap: 28px;
+
+}
+.installers > div:last-child div img{
+    width: 90px;
+    height: 90px;
+}
+.installers > div:last-child div{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height:20.95px;
+    letter-spacing:0.94px;
+    color: rgba(42, 51, 52, 1);
+}
+/* first section  */
+/* home */
+
