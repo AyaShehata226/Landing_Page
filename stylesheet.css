@@ -183,7 +183,7 @@ header .panel{
 /* home */
 
 /* first section  */
-.first_section{
+.first_section , .third_section {
     justify-items: center;
 }
 .installers{
@@ -201,7 +201,7 @@ header .panel{
     gap:50px;
 }
 
-.installers div:first-child > div:first-child h1 ,.second_section h1{
+.installers div:first-child > div:first-child h1 ,.second_section h1 ,.third_section .solar div:first-child h1{
     font-family: 'Inter';
     font-weight: 600px;
     font-size: 42px;
@@ -209,7 +209,7 @@ header .panel{
     letter-spacing: -2%;
     color: rgba(16, 24, 40, 1);
 }
-.installers div:first-child > div:first-child p{
+.installers div:first-child > div:first-child p , .third_section .solar div:first-child p{
     font-family: 'Inter';
     font-weight: 400px;
     size: 16px;
@@ -289,7 +289,7 @@ header .panel{
     height: 240px;
     margin-left: 160px;
 }
-.second_section h1 ,p{
+.second_section h1 , .second_section p{
     color: rgba(255, 255, 255, 1) ;
 }
 .second_section p{
@@ -312,7 +312,54 @@ header .panel{
     line-height: 16.94px;
     letter-spacing:8%;
 }
-/* second section */
+/* third section */
 
+.third_section .solar{
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    height: 777px;
+    padding: 60px 0;
+    justify-items:center;
+    gap: 40px;
+}
+.solar div:first-child h1{
+    text-align: center;
+}
+
+.third_section .solar div:last-child{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    column-gap:32px;
+}
+.third_section .solar div:last-child > div{
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px white;
+}
+.third_section .solar div:last-child > div h3 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing:0;
+    padding-left: 20px;
+}
+.third_section .solar div:last-child > div p ,.third_section .solar div:last-child a {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing:0;
+    color: rgba(71, 84, 103, 1);
+    padding-left: 20px;
+}
+.third_section .solar div:last-child > div a {
+    display: flex;
+    color: rgba(60, 171, 144, 1);
+    text-decoration: none;
+    position: relative;
+    padding-left: 20px;
+    align-items: center;
+    gap: 8px;
+}
 /* home */
 
