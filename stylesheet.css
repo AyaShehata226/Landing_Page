@@ -201,7 +201,7 @@ header .panel{
     gap:50px;
 }
 
-.installers div:first-child > div:first-child h1{
+.installers div:first-child > div:first-child h1 ,.second_section h1{
     font-family: 'Inter';
     font-weight: 600px;
     font-size: 42px;
@@ -271,5 +271,48 @@ header .panel{
     color: rgba(42, 51, 52, 1);
 }
 /* first section  */
+/* second section */
+.second_section{
+    display: flex;
+    background-image: url("./images/81161.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    gap: 10px;
+    height: 550px;
+    align-items: center;
+}
+.second_section div{
+    gap: 32px;
+    max-width:700px;
+    height: 240px;
+    margin-left: 160px;
+}
+.second_section h1 ,p{
+    color: rgba(255, 255, 255, 1) ;
+}
+.second_section p{
+    font-family: 'Inter';
+    font-weight: 500px;
+    font-size: 20px;
+    line-height:28px;
+    letter-spacing:0;
+    justify-self:center;
+}
+.second_section button{
+    border-radius: 109px;
+    padding: 12px 34px;
+    gap: 10px;
+    background-color: rgba(255, 187, 28, 1);
+    border: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+    letter-spacing:8%;
+}
+/* second section */
+
 /* home */
 
