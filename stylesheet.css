@@ -183,7 +183,7 @@ header .panel{
 /* home */
 
 /* first section  */
-.first_section , .third_section {
+.first_section , .third_section ,.fifth_section{
     justify-items: center;
 }
 .installers{
@@ -201,7 +201,7 @@ header .panel{
     gap:50px;
 }
 
-.installers div:first-child > div:first-child h1 ,.second_section h1 ,.third_section .solar div:first-child h1{
+.installers div:first-child > div:first-child h1 ,.second_section h1 ,.third_section .solar div:first-child h1 ,.fourth_section div:first-child h1{
     font-family: 'Inter';
     font-weight: 600px;
     font-size: 42px;
@@ -292,7 +292,7 @@ header .panel{
 .second_section h1 , .second_section p{
     color: rgba(255, 255, 255, 1) ;
 }
-.second_section p{
+.second_section p ,.fourth_section div p{
     font-family: 'Inter';
     font-weight: 500px;
     font-size: 20px;
@@ -323,7 +323,7 @@ header .panel{
     justify-items:center;
     gap: 40px;
 }
-.solar div:first-child h1{
+.solar div:first-child h1 ,.fourth_section div p{
     text-align: center;
 }
 
@@ -361,5 +361,151 @@ header .panel{
     align-items: center;
     gap: 8px;
 }
+/* fourth_section */
+.fourth_section {
+    display: flex;
+    background-image: url("./images/8116\ 1\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    gap: 10px;
+    height: 505px;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    justify-content: center;
+}
+.fourth_section div h1{
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.fourth_section div{
+    max-width: 858px;
+    max-height: 311px;
+    border-radius: 12px;
+    padding: 44px;
+    gap: 32px;
+    background-color: rgba(0, 0, 0, 0.57);
+}
 /* home */
 
+@media (max-width: 1200px) {
+    .nav {
+        padding: 0px 30px; /* Reduce padding on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        display: none; /* Hide nav items on mobile */
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav img {
+        margin: 10px 0; /* Add margin for spacing */
+    }
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem; /* Reduce padding for smaller screens */
+        text-align: center;
+        height: auto; /* Allow height to adjust naturally */
+    }
+
+    header .panel {
+        margin: 0; /* Remove side margins */
+        padding: 10px;
+    }
+
+    .panel h1 {
+        font-size: 32px; /* Reduce font size */
+        line-height: 40px;
+    }
+
+    .panel p {
+        font-size: 16px; /* Adjust text size */
+    }
+}
+
+/* Responsive Progress Bar */
+@media (max-width: 768px) {
+    .progres {
+        margin-left: 0; /* Center the progress bar */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .progres > div {
+        margin: 0 5px; /* Reduce margins */
+    }
+}
+
+/* Responsive Installers Section */
+@media (max-width: 1024px) {
+    .installers {
+        flex-direction: column; /* Stack content vertically */
+        padding: 20px;
+    }
+
+    .installers > div:last-child {
+        margin-top: 20px; /* Add spacing */
+        max-width: 100%; /* Adjust image size */
+    }
+}
+
+@media (max-width: 768px) {
+    .installers {
+        gap: 20px; /* Reduce gap for smaller screens */
+    }
+}
+
+/* Responsive Second Section */
+@media (max-width: 1024px) {
+    .second_section {
+        flex-direction: column; /* Stack content vertically */
+        padding: 20px;
+        height: auto; /* Adjust height */
+    }
+
+    .second_section div {
+        margin-left: 0; /* Remove side margin */
+        width: 100%; /* Full width content */
+    }
+}
+
+/* Responsive Third Section */
+@media (max-width: 768px) {
+    .third_section .solar div:last-child {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
+
+/* Responsive Fourth Section */
+@media (max-width: 768px) {
+    .fourth_section div {
+        width: 90%; /* Reduce container width */
+        padding: 20px; /* Adjust padding */
+    }
+}
+
+/* Additional Tweaks */
+@media (max-width: 576px) {
+    .panel h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .panel p {
+        font-size: 14px;
+    }
+
+    .panel div .call, .panel div .request {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 12px;
+    }
+}
